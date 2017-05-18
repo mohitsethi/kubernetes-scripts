@@ -2,6 +2,7 @@
 
 . $(dirname ${BASH_SOURCE})/util.sh
 
+MASTER_ADDR=54.174.30.174
 # desc "Create a demo pod"
 # run "cat $(relative resources/pod.yaml)" skip
 # run "kubectl create -f $(relative resources/pod.yaml)"
@@ -35,6 +36,6 @@ run "sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni"
 
 
 desc "Initialize your Kubernetes master"
-run "sudo kubeadm init"
+run "sudo kubeadm init --apiserver-advertise-address=$MASTER_ADDR"
 
 # sudo kubeadm init --apiserver-advertise-address=<ip-address>
