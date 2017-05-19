@@ -10,4 +10,4 @@ spec:
   persistentVolumeReclaimPolicy: Recycle
   nfs:
     path: /srv/demo
-    server: master.turbot
+    server: master.ac.ac

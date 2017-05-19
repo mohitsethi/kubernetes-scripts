@@ -4,7 +4,7 @@ metadata:
   name: demo
 spec:
   containers:
-  - image: master.turbot:5000/fedora:24-demo
+  - image: master.ac.ac:5000/fedora:24-demo
     name: fedora
     imagePullPolicy: Always
     command:

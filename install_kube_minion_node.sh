@@ -36,5 +36,5 @@ run "sudo apt-get install -y docker-engine"
 run "sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni"
 
 
-desc "Joininig node to master"
+desc "Joininig node to master.ac"
 run "kubeadm join --token $TOKEN $MASTER_ENDPOINT"

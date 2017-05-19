@@ -14,7 +14,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: master.turbot:5000/wordpress:4.4-apache
+      - image: master.ac.ac:5000/wordpress:4.4-apache
         name: wordpress
         env:
         - name: WORDPRESS_DB_HOST

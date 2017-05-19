@@ -37,7 +37,7 @@ desc "Install kubeadm kubectl & other kube utils"
 run "sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni"
 
 
-desc "Initialize your Kubernetes master"
+desc "Initialize your Kubernetes master.ac"
 run "sudo kubeadm init --apiserver-advertise-address=$MASTER_ADDR"
 
 # sudo kubeadm init --apiserver-advertise-address=<ip-address>

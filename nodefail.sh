@@ -16,7 +16,7 @@
 . $(dirname ${BASH_SOURCE})/util.sh
 
 desc "Deploy an app"
-run "kubectl run demo --image=master.turbot:5000/fedora:24-demo --replicas=2"
+run "kubectl run demo --image=master.ac.ac:5000/fedora:24-demo --replicas=2"
 
 desc "Pod are spread on different nodes"
 run "kubectl get pods -o yaml | grep nodeName:"

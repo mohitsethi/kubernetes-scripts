@@ -7,4 +7,4 @@ clean:
 	rm -f serve-hostname
 
 push:
-	docker build --tag master.turbot:5000/serve-hostname:latest . && docker push master.turbot:5000/serve-hostname:latest
+	docker build --tag master.ac.ac:5000/serve-hostname:latest . && docker push master.ac.ac:5000/serve-hostname:latest

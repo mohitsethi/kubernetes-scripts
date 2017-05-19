@@ -16,7 +16,7 @@
 . $(dirname ${BASH_SOURCE})/util.sh
 
 desc "Deploy an app the just serves the hostname"
-run "kubectl run demo --image=master.turbot:5000/serve-hostname:latest --replicas=2"
+run "kubectl run demo --image=master.ac.ac:5000/serve-hostname:latest --replicas=2"
 
 desc "Create a service for the app"
 run "cat $(relative resources/svc.yaml)" skip
@@ -30,5 +30,5 @@ run "kubectl describe service demo"
 
 tmux new -d -s my-session \
     "$(dirname ${BASH_SOURCE})/service-tmux.sh" \; \
-    split-window -v -d "$(dirname $BASH_SOURCE)/service-curl.sh demo.default.svc.kube.turbot" \; \
+    split-window -v -d "$(dirname $BASH_SOURCE)/service-curl.sh demo.default.svc.kube.ac" \; \
     attach \;
