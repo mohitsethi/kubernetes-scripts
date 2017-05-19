@@ -2,8 +2,8 @@
 
 . $(dirname ${BASH_SOURCE})/util.sh
 
-TOKEN='ba253e.dcad1eb5cd579bb1'
-MASTER_ENDPOINT='10.128.0.95:6443'
+TOKEN='b80d76.b743ea09cc44fd6b'
+MASTER_ENDPOINT='54.174.30.174:6443'
 # desc "Create a demo pod"
 # run "cat $(relative resources/pod.yaml)" skip
 # run "kubectl create -f $(relative resources/pod.yaml)"

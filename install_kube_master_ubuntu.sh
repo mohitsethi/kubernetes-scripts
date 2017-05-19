@@ -32,6 +32,8 @@ run "sudo apt-get update"
 
 desc "Install docker if you don't have it already."
 run "sudo apt-get install -y docker-engine"
+
+desc "Install kubeadm kubectl & other kube utils"
 run "sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni"
 
 
